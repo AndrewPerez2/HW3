@@ -24,6 +24,12 @@ Great summary of properties: https://www.w3schools.com/css/css3_flexbox.asp
         <nav> occupies 20% of the row, <main> occupies 60%, and <aside> 
             occupies 20%. 20% + 60% + 20% = 100% of the row.
         */
+        table,
+        td{
+            border-style: solid;
+            border-width: 4px blue;
+            border-collapse: collapse;
+        }
         header {
             background: rgb(204, 209, 215);
             line-height: 20px;
@@ -54,14 +60,14 @@ Great summary of properties: https://www.w3schools.com/css/css3_flexbox.asp
             flex-grow: 0;
             flex-shrink: 1;
             flex-basis: 20%;
-            background: rgba(125, 202, 125, 0.911);
+            background-color: rgba(125, 202, 125, 0.911);
         }
 
         .main{
             flex: 0 1 80%;
             flex-wrap: wrap;
             flex-grow: 1;
-            background: cornflowerblue;
+            background-color: cornflowerblue;
             height: 300px;
             /* height just so we have something to visualize  */
             text-align: left;
@@ -126,6 +132,221 @@ Great summary of properties: https://www.w3schools.com/css/css3_flexbox.asp
             </p> 
         </main>
     </div>
+</body>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://i0.wp.com/brightestyoungthings.com/wp-content/uploads/2012/11/title548853835.jpg?fit=345%2C303&quality=100&ssl=1" alt="Logo">
+        </div>
+        <nav class="nav">
+            <ul class="ul">
+                <li><a href="#intro-id">Introduction</a></li>
+                <li><a href="#career-id">Career Summary</a></li>
+                <li><a href="#ed-id">Education and Qualifications</a></li>
+                <li><a href="#interest-id">Interests and Hobbies</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="container">
+        <nav class="left">
+            <h1 class="header" id="#interest-id">Interests and Hobbies</h1>
+            <img src="Picture1.jpg" alt="Profile Pic">
+            <br>
+            <b>Techincal Skills:</b>
+                <div class="skill_tables">
+                    <ul>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>Adobe Premiere Pro</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+        </nav>
+        <main class="main">
+            <ol>
+                <li>Juggling</li>
+                <li>Listening to Records</li>
+                <li>
+                    Surfing
+                    <a href="https://www.surfline.com/surf-report/diamond-head/5842041f4e65fad6a77088a2?camId=583497ece411dc743a5d5285" target="_blank"> 
+                        <img src="https://lp-cms-production.imgix.net/2021-04/GettyRF_483100479.jpg?auto=format&q=40&ar=16%3A9&fit=crop&w=3038" alt="Delicious Barrel" width="50" height="50">
+                    </a> 
+                </li>
+                <li>Being Active (ie: hiking, lifting, basketball)</li>
+                <li>Eating Food</li>
+                <li>Napping</li>
+                <li>Meditating</li>
+                <li>Cruising</li>
+            </ol>    
+        </main>
+    </div>
+    
+</body>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://i0.wp.com/brightestyoungthings.com/wp-content/uploads/2012/11/title548853835.jpg?fit=345%2C303&quality=100&ssl=1" alt="Logo">
+        </div>
+
+        <nav class="nav">
+            <ul class="ul">
+                <li><a href="#intro-id">Introduction</a></li>
+                <li><a href="#career-id">Career Summary</a></li>
+                <li><a href="#ed-id">Education and Qualifications</a></li>
+                <li><a href="#interest-id">Interests and Hobbies</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <div id="container">
+        <nav class="left">
+            <h1 class="header" id="#ed-id">Education and Qualifications</h1>
+            <img src="Picture1.jpg" alt="Profile Pic">
+            <br>
+
+            <b>Techincal Skills:</b>
+                <div class="skill_tables">
+                    <ul>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>Adobe Premiere Pro</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+        </nav>
+        <main class="main">
+            <table>
+                <caption>College Education</caption>
+                <tr>
+                    <td><b>Education:</b></td>
+                    <td><b>GPA:</b></td>
+                    <td><b>Accolades:</b></td>
+                </tr>
+                <tr>
+                    <td>Gonzaga University</td>
+                    <td>3.41</td>
+                    <td>
+                        Dean's List: 
+                        <ul>
+                            <li>Fall 2019</li>
+                            <li>Spring 2020</li>
+                            <li>Fall 2020</li>
+                            <li>Spring 2021</li>
+                        </ul>
+        
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <caption>High School Education</caption>
+                <tr>
+                    <td><b>Education</b></td>
+                    <td><b>GPA:</b></td>
+                </tr>
+                <tr>
+                    <td>Punahou School</td>
+                    <td>3.71</td>
+                    
+                </tr>
+            </table>
+        </main>
+    </div>
+    
+</body>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://i0.wp.com/brightestyoungthings.com/wp-content/uploads/2012/11/title548853835.jpg?fit=345%2C303&quality=100&ssl=1" alt="Logo">
+        </div>
+        <nav class="nav">
+            <ul class="ul">
+                <li><a href="#intro-id">Introduction</a></li>
+                <li><a href="#career-id">Career Summary</a></li>
+                <li><a href="#ed-id">Education and Qualifications</a></li>
+                <li><a href="#interest-id">Interests and Hobbies</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <div id="container">
+        <nav class="left">
+
+        <h1 class="header" id="#career-id">Career</h1>
+        <img src="Picture1.jpg" alt="Profile Pic">
+        <br>
+            <b>Techincal Skills:</b>
+                <div class="skill_tables">
+                    <ul>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>Adobe Premiere Pro</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+        </nav>
+        <main class="main">
+            <h1>Career Summary</h1>
+            <table>
+                <tr>
+                    <td><b>Position:</b></td>
+                    <td><b>Responsibilities:</b></td>
+                </tr>
+                <tr>
+                    <td>Data Analyst Intern, New Mexico State University<br>
+                        May 2021-July 2021</td>
+                    <td>
+                        <ul>
+                            <li>
+                                Worked with a mentor in Human-Robot Interaction analyzing fear in video games and collecting qualitative data to form a thematic analysis about agent-to-agent interaction.
+                            </li>
+                            <li>
+                                Transcribed my analysis into an 8-paged research thesis using LaTeX.  
+                            </li>
+                            <li>
+                                Presented my results at the conclusion of my program to over 20 of my peers and their mentors.
+                            </li>
+                        </ul>
+                    </td>
+                 </tr>
+                 
+                 <tr>
+                    <td>School Mascot, Gonzaga University September 2019-Present </td>
+                    <td>
+                        <ul>
+                            <li>
+                                Provided one of the key connection points at over 10 events between the community and the University as the number one personality, supporter, and fan. 
+                            </li>
+                            <li>
+                                Assisted with the intercollegiate athletics marketing team to promote Gonzaga University and its brand and serve as the ambassador for all Spike the Bulldog related activities at Gonzaga University.    
+                            </li>
+                            <li>
+                                Aided the execution of game day promotion and advertising campaigns, and athletic event initiatives including pregame interactions with fans.
+                            </li>
+                        </ul>
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>Sports Director, Punahou School June 2016-August 2019 </td>
+                    <td>
+                        <ul>
+                            <li>
+                                Coordinated production schedules and activities for over 50 events related to Punahou School for Olelo television network, Youtube, and Facebook 
+                            </li>
+                            <li>
+                                Presented production ideas and determined creative scenarios for production and delivery • 	Demonstrated ability to work in a creative, hands-on, communication-driven environment.     
+                            </li>
+                        </ul>
+                    </td>
+                 </tr>
+        
+                
+            </table>
+        </main>
+    </div>
+    
 </body>
 
 </html>
